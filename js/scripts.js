@@ -1,7 +1,7 @@
 (function($) {
     $(document).ready(function() {
         //mobile menu click
-        $(".navbar-toggler").click(function() {
+        $("header .navbar-toggler").click(function() {
             $(this).toggleClass("current");
             $("body").toggleClass("openMenu");
         });
@@ -13,6 +13,11 @@
             } else {
                 $(".main-header").removeClass("fixed");
             }
+        });
+        //mobile menu click
+        $(".member-row .navbar-toggler").click(function() {
+            $(this).toggleClass("expanded");
+            $(".member-right-col").toggleClass("expanded");
         });
 
         //aos
@@ -39,6 +44,27 @@
         var swiper = new Swiper(".client-logos", {
             freeMode: true,
             spaceBetween: 30,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            },
+        });
+
+        //product-ref
+        var swiper = new Swiper(".product-ref", {
+            freeMode: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 3,

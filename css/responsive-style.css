@@ -103,6 +103,28 @@
   .contact-modal h3 {
     margin-bottom: 30px;
   }
+  .sidebar {
+    flex-basis: auto;
+    padding-top: 50px;
+    width: 280px;
+  }
+  .member-row .member-right-col {
+    width: 100%;
+  }
+  .member-row {
+    position: relative;
+  }
+  .member-row .navbar-toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sidebar h4 {
+    font-size: 20px;
+  }
+  .member-row .member-right-col.expanded {
+    width: calc(100% - 280px);
+  }
 }
 @media (max-width: 768px) {
   .info-box,
@@ -122,6 +144,9 @@
   .card-panel {
     width: auto;
   }
+  .account-tabs .nav-pills-in.me-3 {
+    margin-right: 0 !important;
+  }
 }
 @media (max-width: 640px) {
   .account-tabs {
@@ -134,5 +159,15 @@
   .card-panel {
     width: auto;
     margin: 0;
+  }
+  .member-row .sidebar {
+    width: 100%;
+    border-right: none;
+  }
+  .member-row .member-right-col.expanded {
+    width: calc(100% - 280px);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
   }
 }
