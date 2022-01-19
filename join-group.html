@@ -29,7 +29,12 @@
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
                 <div class="search-area">
-                    <div class="search-box"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                    <div class="search-box desktop-search"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                    <div class="mobile-search-button"><button class="btn btn-primary search-btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-search"></i></button>
+                        <div class="dropdown-menu mobile-search-dropdown" aria-labelledby="dropdownMenuButton1">
+                            <div class="search-box"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                        </div>
+                    </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar icon-bar-1"></span>
@@ -53,13 +58,231 @@
         </div>
     </header>
     <!-- header ends -->
-    <section class="account-section">
+    <section class="account-section group-section">
         <div class="container">
-            <div class="row w-100">
-                <div class="col-md-8">
-
+            <div class="member-row">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarSupportedContent" aria-controls="sidebarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+                  </button>
+                <div class="sidebar collapse navbar-collapse" id="sidebarSupportedContent">
+                    <h4>Group cart i own</h4>
+                    <ul class="sidebar-list">
+                        <li class="active"><a href="#"><span>Title A</span><i class="fas fa-bell"></i></a></li>
+                        <li><a href="#"><span>Title B</span></a></li>
+                        <li><a href="#"><span>Title C</span></a></li>
+                        <li><a href="#"><span>Title D</span></a></li>
+                    </ul>
+                    <h4>Public group cart</h4>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><span>Title A</span></a></li>
+                        <li><a href="#"><span>Title B</span></a></li>
+                        <li><a href="#"><span>Title C</span></a></li>
+                        <li><a href="#"><span>Title D</span></a></li>
+                    </ul>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="member-right-col">
+                    <h4 class="mb-5">Modify Products</h4>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-watches.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart watches</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-tv.jpeg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart TV devices</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/redmi-phone.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Redmi Phone</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-watches.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart watches</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-tv.jpeg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart TV devices</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/redmi-phone.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Redmi Phone</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-watches.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart watches</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-tv.jpeg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart TV devices</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/redmi-phone.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Redmi Phone</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-watches.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart watches</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/smart-tv.jpeg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Smart TV devices</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-item">
+                                        <a href="#">
+                                            <figure><img src="images/redmi-phone.jpg" alt=""></figure>
+                                        </a>
+                                        <ul class="like-option">
+                                            <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
+                                            <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
+                                        </ul>
+                                        <p>
+                                            <a href="#">Redmi Phone</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border p-3">
+                                <h4>Add / Delete Members</h4>
+                                <div class="cart-products-block">
+                                    <div class="cart-product member-block">
+                                        <a href="#">
+                                            <img src="images/user.png" alt="">
+                                            <span>Joseph Gordan</span>
+                                        </a>
+                                    </div>
+                                    <div class="cart-product member-block">
+                                        <a href="#">
+                                            <img src="images/user.png" alt="">
+                                            <span>Jenifer Lindsay</span>
+                                        </a>
+                                    </div>
+                                    <div class="cart-product member-block">
+                                        <a href="#">
+                                            <img src="images/user.png" alt="">
+                                            <span>Sammy Ross</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -28,7 +28,12 @@
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
                 <div class="search-area">
-                    <div class="search-box"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                    <div class="search-box desktop-search"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                    <div class="mobile-search-button"><button class="btn btn-primary search-btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-search"></i></button>
+                        <div class="dropdown-menu mobile-search-dropdown" aria-labelledby="dropdownMenuButton1">
+                            <div class="search-box"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                        </div>
+                    </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar icon-bar-1"></span>
@@ -86,7 +91,7 @@
                         <div class="col-md-12 col-lg-9">
                             <div class="member-area">
                                 <h3>Shopping experts</h3>
-                                <div class="row w-100 ">
+                                <div class="row">
                                     <div class="col-sm-6 col-md-3 ">
                                         <div class="expert-block ">
                                             <figure><img src="images/user.png " alt=" "></figure>
