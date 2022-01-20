@@ -169,6 +169,9 @@
   .account-tabs .nav-pills-in.me-3 {
     margin-right: 0 !important;
   }
+  .account-tabs .nav-pills {
+    width: 35%;
+}
 }
 @media (max-width: 640px) {
   .account-tabs {

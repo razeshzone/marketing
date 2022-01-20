@@ -151,7 +151,8 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="date"],
-select {
+select,
+.input-group>input.form-control {
   height: 50px !important;
 }
 /* global css ends */
