@@ -152,7 +152,7 @@ input[type="tel"],
 input[type="email"],
 input[type="date"],
 select,
-.input-group>input.form-control {
+.input-group > input.form-control {
   height: 50px !important;
 }
 /* global css ends */
@@ -359,7 +359,7 @@ select,
 }
 .main-footer .form-group input {
   padding-right: 65px;
-  height: 42px;
+  height: 50px;
 }
 .main-footer .form-group .submit {
   position: absolute;
