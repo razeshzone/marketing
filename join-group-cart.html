@@ -29,10 +29,32 @@
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
                 <div class="search-area">
-                    <div class="search-box desktop-search"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
-                    <div class="mobile-search-button"><button class="btn btn-primary search-btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-search"></i></button>
-                        <div class="dropdown-menu mobile-search-dropdown" aria-labelledby="dropdownMenuButton1">
-                            <div class="search-box"><input class="form-control" type="text" placeholder="Search Here..."><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                    <div class="search-box "><input class="form-control" id="text" type="text" placeholder="Search Here..." onkeyup="searchBox();"><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
+                    <div id="keyword-searcher">
+                        <h5>Here's your search result</h5>
+                        <div class="cart-products-block">
+                            <div class="cart-product">
+                                <a href="#">
+                                    <img src="images/m12-mobile.jpg" alt="">
+                                    <span>product name <br> price:$00.00</span>
+                                </a>
+                                <div class="d-flex"><button class="btn btn-primary" type="button">Add to cart</button></div>
+                            </div>
+                            <div class="cart-product">
+                                <a href="#">
+                                    <img src="images/smart-watches.jpg" alt="">
+                                    <span>product name <br> price:$00.00</span>
+                                </a>
+                                <div class="d-flex"><button class="btn btn-primary" type="button">Add to cart</button></div>
+                            </div>
+                            <div class="cart-product">
+                                <a href="#">
+                                    <img src="images/smart-tv.jpeg" alt="">
+                                    <span>product name <br> price:$00.00</span>
+                                </a>
+                                <div class="d-flex"><button class="btn btn-primary" type="button">Add to cart</button></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -80,45 +102,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-3">
+                    <figure><img class="logo" src="images/logo.png" alt=""></figure>
+                    <a href="#" class="link mb-3 d-block">About Us</a>
                     <h4>Follow Us</h4>
                     <ul class="social">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-md-5">
-                    <h4>Links</h4>
-                    <div class="row">
-                        <div class="col-md-6 half">
-                            <ul>
-                                <li>
-                                    <a href="#">Blogs</a>
-                                </li>
-                                <li>
-                                    <a href="#">Carreer</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 half">
-                            <ul>
-                                <li href="#">
-                                    <a href="#">Terms & Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Affiliate Agreement</a>
-                                </li>
-                                <li>
-                                    <a href="#">Return & Shipping Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-sm-6 col-md-3">
+                    <h4>Affiliate Policy</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li href="#">
+                            <a href="terms.html">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliate Agreement</a>
+                        </li>
+                        <li>
+                            <a href="#">Return & Shipping Policy</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <h4>Join our email list</h4>
@@ -126,9 +136,25 @@
                         <div class="form-group"><input type="email" class="form-control" placeholder="Your Email Address"><button class="submit btn btn-primary"><i class="fas fa-paper-plane"></i></button></div>
                     </form>
                 </div>
+                <div class="col-sm-6 col-md-2">
+                    <ul>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="copyright">
-                <p>All Rights Reserved. © 2022.</p>
+                <p>Copyright © 2020 - 2022 Social Shopper Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -139,18 +165,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="js/scripts.js "></script>
+    <script>
+        //search focus show
+        function searchBox() {
+            var x = document.getElementById("text").value;
+            var y = document.getElementById("keyword-searcher");
+            if (x.length > 0) {
+                y.style.display = "block";
+            } else {
+                y.style.display = "none";
+            }
+        }
+
+        document.getElementById("text").addEventListener("onkeyup", function() {
+            searchBox();
+        });
+    </script>
 
 </body>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
 
 </html>

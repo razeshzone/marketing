@@ -19,7 +19,9 @@
   .container {
     max-width: 92%;
   }
-
+  .main-header .navbar-default .navbar-nav li {
+    margin-right: 0;
+  }
   .main-header .navbar-nav li a,
   .main-header .navbar-nav .navbar-item .nav-link,
   .main-header .navbar-expand-lg .navbar-nav .nav-link {
@@ -86,9 +88,8 @@
   .banner h1 {
     font-size: 38px;
   }
-  .information-section {
-    padding: 50px 0;
-  }
+  .information-section,
+  .testimonials-section,
   .ecommerce-section,
   .two-column-section,
   .group-section {
@@ -147,6 +148,23 @@
     margin-bottom: 0;
     margin-right: 15px;
   }
+  .info-box .icon,
+  .testimonials-section figure {
+    width: 80px;
+    height: 80px;
+  }
+  .info-text {
+    font-size: 16px;
+  }
+  .info-box .icon {
+    font-size: 25px;
+  }
+  #keyword-searcher {
+    max-width: 485px;
+  }
+  #keyword-searcher > .cart-products-block > .cart-product {
+    flex-direction: row;
+  }
 }
 @media (max-width: 768px) {
   .info-box,
@@ -171,6 +189,26 @@
   }
   .account-tabs .nav-pills {
     width: 35%;
+  }
+  .ecommerce-section .swiper-button-next,
+  .ecommerce-section .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20%);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after,
+  .ecommerce-section .swiper-button-prev:after,
+  .ecommerce-section .swiper-rtl .swiper-button-next:after {
+    font-size: 20px;
+    color: var(--primaryColor);
+  }
+  #keyword-searcher {
+    max-width: 400px;
   }
 }
 @media (max-width: 640px) {
@@ -238,5 +276,86 @@
   .member-row .member-right-col h4 {
     margin-left: 30px;
     margin-top: 3px;
+  }
+  .member-area h3 {
+    padding-left: 40px;
+  }
+  .static-banner-item {
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-around;
+  }
+  .static-banner-item .fixed-item,
+  .banner-figure {
+    width: 100%;
+  }
+  .banner-figure img {
+    max-height: 250px;
+  }
+  .search-box input {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .banner-figure img {
+    max-height: 160px;
+  }
+  .banner h1,
+  .banner h2,
+  .testimonials-section h2,
+  .ecommerce-section h2 {
+    font-size: 28px;
+  }
+  .testimonials-section h2 {
+    margin-bottom: 20px;
+  }
+  .static-banner-item {
+    max-height: 60vh;
+  }
+  .info-box .icon,
+  .testimonials-section figure {
+    width: 60px;
+    height: 60px;
+  }
+  .info-box .icon i {
+    font-size: 20px;
+  }
+  .search-box .search-btn {
+    min-width: 30px;
+    height: 50px;
+    font-size: 16px;
+  }
+  #keyword-searcher {
+    max-width: 460px;
+    left: 0;
+    width: 100%;
+  }
+  #keyword-searcher > .cart-products-block > .cart-product {
+    flex-direction: row;
+  }
+  .chat-bubble .bubble-info {
+    max-width: 80%;
+    width: 100%;
+  }
+  .chat-module-actions {
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .chat-module-footer .submit,
+  .chat-module-footer .input-box {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .chat-module-footer .submit {
+    display: flex;
+    justify-content: center;
+  }
+  .chat-module-footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  #keyword-searcher > .cart-products-block > .cart-product {
+    flex-direction: column;
   }
 }
