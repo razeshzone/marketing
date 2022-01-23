@@ -32,13 +32,19 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="images/secure-login.svg" alt="">
+                            <img src="images/mobile.svg" alt="">
                         </div>
                         <div class="col-md-6">
                             <h3>Login</h3>
-                            <form action="">
-                                <div class="form-group"><span><i class="fas fa-user"></i></span><input class="form-control" type="text" placeholder="Your Name"></div>
-                                <div class="form-group"><span><i class="fas fa-envelope"></i></span><input class="form-control" type="email" placeholder="Your Email"></div>
+                            <form action="#" method="post" class="cmxform" id="loginForm">
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" name="loginEmail" class="form-control" placeholder="me@email.com" aria-label="Email" aria-describedby="basic-addon1" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-lock"></i></span>
+                                    <input type="text" name="loginPassword" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon2" required>
+                                </div>
                                 <div class="form-group">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-md-6">
@@ -73,9 +79,18 @@
                         <div class="col-md-7">
                             <h3>Register</h3>
                             <form action="">
-                                <div class="form-group"><span><i class="fas fa-user"></i></span><input class="form-control" type="text" placeholder="Your Name"></div>
-                                <div class="form-group"><span><i class="fas fa-envelope"></i></span><input class="form-control" type="email" placeholder="Your Email"></div>
-                                <div class="form-group"><span><i class="fas fa-lock"></i></span><input class="form-control" type="password" placeholder="Your Password"></div>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text" id="basic-addon3"><i class="fas fa-user"></i></span>
+                                    <input type="text" name="sName" class="form-control" placeholder="Full Name" aria-label="name" aria-describedby="basic-addon3" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text" id="basic-addon4"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" name="sEmail" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon4" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text" id="basic-addon5"><i class="fas fa-lock"></i></span>
+                                    <input type="text" name="sPassword" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon5" required>
+                                </div>
                                 <div class="form-group">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -135,13 +150,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Join Keep</a>
+                            <a href="#" class="nav-link">Join a CoCart</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Create a Keep</a>
+                            <a href="#" class="nav-link">Create a CoCart</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="nav-link btn btn-outline-primary">Login</a>
+                            <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="nav-link btn btn-outline-primary">Sign In</a>
                         </li>
                         <li class="nav-item">
                             <a href="#register" data-bs-toggle="modal" data-bs-target="#register" class="nav-link btn btn btn-primary">Free Sign Up</a>
@@ -364,6 +379,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="js/scripts.js "></script>
     <script>
+        $("#loginForm").validate({
+            rules: {
+                loginEmail: {
+                    required: true,
+                    email: true, //for validate email
+                    maxlength: 150,
+                    minlength: 6,
+                },
+                loginPassword: {
+                    required: true,
+                    maxlength: 20,
+                    minlength: 8,
+                },
+            },
+        });
+
         //search focus show
         function searchBox() {
             var x = document.getElementById("text").value;

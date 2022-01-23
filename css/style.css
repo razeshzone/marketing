@@ -112,22 +112,22 @@ h6 {
   font-weight: 400;
 }
 h1 {
-  font-size: 55px;
-  font-weight: 300;
-}
-h2 {
   font-size: 45px;
   font-weight: 300;
 }
-h3 {
+h2 {
   font-size: 35px;
+  font-weight: 300;
+}
+h3 {
+  font-size: 30px;
   font-weight: 700;
 }
 h4 {
-  font-size: 25px;
+  font-size: 20px;
 }
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 h6 {
   font-size: 16px;
@@ -146,6 +146,7 @@ a,
 }
 .form-group {
   margin-bottom: 15px;
+  position: relative;
 }
 input[type="text"],
 input[type="tel"],
@@ -155,6 +156,9 @@ input[type="file"],
 select,
 .input-group > input.form-control {
   height: 50px !important;
+}
+.modal {
+  top: 50px;
 }
 /* global css ends */
 /* header starts */
@@ -180,7 +184,7 @@ select,
 .main-header .navbar-nav li a,
 .main-header .navbar-nav .navbar-item .nav-link,
 .main-header .navbar-expand-lg .navbar-nav .nav-link {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 12px;
   color: var(--black);
   padding: 13px 10px;
@@ -340,7 +344,7 @@ select,
 .contact-modal input[type="tel"],
 .contact-modal input[type="email"],
 .contact-modal input[type="password"] {
-  padding-left: 30px;
+  padding-left: 15px;
 }
 /* main-footer starts */
 .main-footer {
@@ -631,6 +635,9 @@ select,
 }
 .expert-block figure {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .expert-block figure img {
   width: 100px;
@@ -643,7 +650,22 @@ select,
   font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
+  display: block;
+  text-align: center;
 }
+.expert-block span.desc {
+  font-size: 12px;
+  font-weight: 700;
+}
+.expert-block a {
+  color: var(--black);
+  transition: var(--transition500);
+}
+.expert-block a:hover {
+  color: var(--primaryColor);
+  transition: var(--transition500);
+}
+
 .account-tabs .nav-pills-in {
   width: 100%;
 }
@@ -822,7 +844,7 @@ select,
   outline: none;
   background: none;
   padding: 5px;
-  color: var(--gray);
+  color: var(--primaryColor);
   transition: var(--transition500);
 }
 .cart-product .cta-btn:hover,
@@ -1132,8 +1154,11 @@ label.error {
 .account-tabs .input-group {
   margin-bottom: 7.5px;
 }
-.account-tabs .input-group > .form-control.error {
+.account-tabs .input-group > .form-control.error,
+.form-control.error {
   border-color: var(--bs-danger);
+}
+.account-tabs .input-group > .form-control.error {
   border-radius: 0 4px 4px 0 !important;
 }
 .account-tabs .form-control.form-control-lg {
@@ -1141,4 +1166,25 @@ label.error {
 }
 .account-tabs .input-group > textarea.form-control {
   height: 300px;
+}
+.cart-products-block .btn-primary {
+  width: 100px;
+  height: 50px;
+}
+.cart-products-block .input-group {
+  width: calc(100% - 115px);
+  margin-bottom: 0;
+}
+.cart-product-lg a img {
+  max-width: 35px;
+}
+.cart-product-lg input {
+  width: 50px;
+  height: 40px !important;
+}
+.searched-item .col-lg-4 {
+  border-right: solid 1px var(--lightGray);
+}
+.searched-item .col-lg-4:last-child {
+  border: none;
 }

@@ -2,19 +2,19 @@
 }
 @media (max-width: 992px) {
   h1 {
-    font-size: 38px;
+    font-size: 30px;
   }
   h2 {
-    font-size: 38px;
+    font-size: 25px;
   }
   h3 {
-    font-size: 28px;
+    font-size: 20px;
   }
   h4 {
     font-size: 18px;
   }
   h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .container {
     max-width: 92%;
@@ -86,7 +86,7 @@
     display: none;
   }
   .banner h1 {
-    font-size: 38px;
+    font-size: 35px;
   }
   .information-section,
   .testimonials-section,
@@ -164,6 +164,14 @@
   }
   #keyword-searcher > .cart-products-block > .cart-product {
     flex-direction: row;
+  }
+  .searched-item .col-lg-4 {
+    border-right: none;
+    border-bottom: solid 1px var(--lightGray);
+    padding: 15px 0;
+  }
+  .cart-products-block .input-group {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
