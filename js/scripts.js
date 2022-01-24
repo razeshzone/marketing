@@ -19,7 +19,8 @@
             $(this).toggleClass("expanded");
             $(".member-right-col").toggleClass("expanded");
         });
-
+        //matchHeight
+        $(".product-item").matchHeight();
         //aos
         AOS.init({
             once: true, // this one if you want to load animation once else you can remove it,
