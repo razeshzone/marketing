@@ -25,7 +25,7 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-transparent">
+            <nav class="navbar navbar-default navbar-expand-lg bg-transparent">
                 <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
                 <div class="search-area">
                     <div class="search-box "><input class="form-control" id="text" type="text" placeholder="Search Here..." onkeyup="searchBox();"><button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button></div>
@@ -53,7 +53,9 @@
                                 </a>
                                 <div class="d-flex"><button class="btn btn-primary" type="button">Add to cart</button></div>
                             </div>
-
+                            <div class="d-flex justify-content-end">
+                                <a href="product-search-result.html" class="btn-link">More Result</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +87,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarSupportedContent" aria-controls="sidebarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fas fa-bars"></i></span>
                   </button>
-                <div class="sidebar collapse navbar-collapse" id="sidebarSupportedContent">
+                <div class="sidebar scroller collapse navbar-collapse" id="sidebarSupportedContent">
                     <h4>Keep list I own</h4>
                     <ul class="sidebar-list">
                         <li class="active"><a href="#"><span>Title A</span><i class="fas fa-bell"></i></a></li>
@@ -107,11 +109,41 @@
                         <li><a href="#"><span>Title C</span></a></li>
                         <li><a href="#"><span>Title D</span></a></li>
                     </ul>
+                    <h4>Sample title</h4>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><span>Title A</span></a></li>
+                        <li><a href="#"><span>Title B</span></a></li>
+                        <li><a href="#"><span>Title C</span></a></li>
+                        <li><a href="#"><span>Title D</span></a></li>
+                    </ul>
+                    <h4>Sample title</h4>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                        <li><a href="#"><span>Lipsum lorem</span></a></li>
+                    </ul>
                 </div>
                 <div class="member-right-col">
                     <div class="row">
                         <div class="col-md-12 col-lg-9">
-                            <div class="member-area">
+                            <div class="member-area scroller">
                                 <h3>Shopping experts</h3>
                                 <div class="d-flex flex-column">
                                     <div class="expert-block ">
@@ -160,44 +192,63 @@
     <!-- account-section ends -->
     <div class="product-ad-wrap">
         <div class="container">
-            <h3 class="mb-3">Blockbuster Deals</h3>
+            <h3 class="mb-3">Product Ads</h3>
             <div class="swiper product-ref">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/m12-mobile.jpg" alt="">
-                            <span>product name <br/> price:$00.00</span>
-                        </a>
+                        <div class="product-item">
+                            <div class="offer">Best Seller</div>
+                            <a href="#">
+                                <figure><img src="images/redmi9ASport.jpg" alt=""></figure>
+                                <span class="product-title">Redmi 9A Sport (Carbon Black, 2GB RAM, 32GB Storage)</span>
+                                <span class="product-price"><span class="highlight">Rs7,499</span> <span class="line-through">Rs.8,963</span></span>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/laptop.jpg" alt="">
-                            <span>product name <br/> price:$00.00</span>
-                        </a>
+                        <div class="product-item">
+                            <a href="#">
+                                <figure><img src="images/boAt-earpod.jpg" alt=""></figure>
+                                <span class="product-title">boAt Airdopes 141 TWS Earbuds with 42H Playtime, Beast Mode, ENx Tech, ASAP Charge, IWP, IPX4 Water Resistance, Smooth Touch Controls(Cider Cyan)</span>
+                                <span class="product-price"><span class="highlight">Rs7,499</span> <span class="line-through">Rs.8,963</span></span>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/smart-tv.jpeg" alt="">
-                            <span>product name <br/> price:$00.00</span>
-                        </a>
+                        <div class="product-item">
+                            <a href="#">
+                                <figure><img src="images/one-plus-bullet-wireless.jpg" alt=""></figure>
+                                <span class="product-title">Oneplus Bullets Wireless Z Bass Edition Bluetooth in Ear Earphones with mic (Reverb Red)</span>
+                                <span class="product-price"><span class="highlight">Rs.1,499</span> <span class="line-through">Rs.1,979</span></span>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/smart-watches.jpg" alt="">
-                            <span>product name <br/> price:$00.00</span>
-                        </a>
+                        <div class="product-item">
+                            <a href="#">
+                                <figure><img src="images/m12-mobile.jpg" alt=""></figure>
+                                <span class="product-title">Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime</span>
+                                <span class="product-price"><span class="highlight">Rs.13,499</span> <span class="line-through">Rs.15,979</span></span>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/redmi-phone.jpg" alt="">
-                            <span>product name <br/> price:$00.00</span>
-                        </a>
+                        <div class="product-item">
+                            <a href="#">
+                                <figure><img src="images/redmi9AMetallicBlue.jpg" alt=""></figure>
+                                <span class="product-title">Redmi 9A Sport (Metallic Blue, 2GB RAM, 32GB Storage)</span>
+                                <span class="product-price"><span class="highlight">Rs.7,499</span> <span class="line-through">Rs.8,979</span></span>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
-                            <img src="images/earpods.jpg" alt="">
-                            <span>product name <br/> price:$00.00</span>
-                        </a>
+                        <div class="product-item">
+                            <a href="#">
+                                <figure><img src="images/redmi9Amidnight.jpg" alt=""></figure>
+                                <span class="product-title">Redmi 9A (Midnight Black 2GB RAM 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery</span>
+                                <span class="product-price"><span class="highlight">Rs.7,499</span> <span class="line-through">Rs.8,979</span></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>

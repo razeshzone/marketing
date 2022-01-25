@@ -60,6 +60,9 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            autoplay: {
+                delay: 2000,
+            },
         });
 
         //product-ref
@@ -104,7 +107,7 @@
                     spaceBetween: 50,
                 },
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 100,
                 },
             },

@@ -325,9 +325,6 @@
   .banner-figure {
     width: 100%;
   }
-  .banner-figure img {
-    max-height: 250px;
-  }
   .search-box input {
     margin-right: 5px;
   }
