@@ -35,7 +35,7 @@
                             <img src="images/mobile.svg" alt="">
                         </div>
                         <div class="col-md-6">
-                            <h3>Login</h3>
+                            <h3>Sign In</h3>
                             <form action="#" method="post" class="cmxform" id="loginForm">
                                 <div class="input-group mb-4">
                                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
@@ -139,7 +139,7 @@
                                 <div class="d-flex"><button class="btn btn-primary" type="button">Add to cart</button></div>
                             </div>
                             <div class="d-flex justify-content-end">
-                                <a href="product-search-result.html" class="btn-link">More Result</a>
+                                <a href="product-search-result.html" class="btn-link">More Results</a>
                             </div>
                         </div>
                     </div>
@@ -154,14 +154,20 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Join a CoCart</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Create a CoCart</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Create a CoCart
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Sign In if a Member</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Up if not a Member</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="nav-link btn btn-outline-primary">Sign In</a>
+                            <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="nav-link">Sign In</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#register" data-bs-toggle="modal" data-bs-target="#register" class="nav-link btn btn btn-primary">Free Sign Up</a>
+                            <a href="account.html" class="nav-link">Free Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -189,25 +195,25 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="info-box">
                         <div class="icon"><i class="fas fa-hands-helping"></i></div>
-                        <span class="info-text">Build <br/>relationship</span>
+                        <span class="info-text">Build <br/>relationships</span>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="info-box">
                         <div class="icon"><i class="fas fa-globe-asia"></i></div>
-                        <span class="info-text">Shop with anyone <br/>at anywhere</span>
+                        <span class="info-text">Shop with anyone <br/>anywhere</span>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="info-box">
                         <div class="icon"><i class="fas fa-shopping-cart"></i></div>
-                        <span class="info-text">Simple to use <br/>one single cart</span>
+                        <span class="info-text">Simple to use <br/>one Cocart</span>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="info-box">
                         <div class="icon"><i class="fas fa-gift"></i></div>
-                        <span class="info-text">Real options for<br/>your loved ones</span>
+                        <span class="info-text">Real opinions for<br/>your loved ones</span>
                     </div>
                 </div>
             </div>
@@ -235,7 +241,7 @@
                     <div class="swiper-slide">
                         <div class="block">
                             <div class="overlay">
-                                <p>Thanks to Social Shopper offering the group shopping feature, it creates more ways to spend time with my sister while we live over 1000 miles apart. I feel it helps to grow even closer. Where has this app been all my life?
+                                <p>Thanks to Social Shopper offering the Cocart shopping feature, it creates more ways to spend time with my sister while we live over 1000 miles apart. I feel it helps to grow even closer. Where has this app been all my life?
                                     I love it and highly recommend it.</p>
                             </div>
                             <figure><img src="images/user.png" alt=""></figure>
@@ -365,56 +371,64 @@
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <figure><img class="logo" src="images/logo.png" alt=""></figure>
-                    <a href="#" class="link mb-3 d-block">About Us</a>
-                    <h4>Follow Us</h4>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                    </ul>
+                <div class="col-sm-12 col-md-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <figure><img class="logo" src="images/logo.png" alt=""></figure>
+                            <a href="#" class="link mb-3 d-block">About Us</a>
+                            <h4>Follow Us</h4>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <h4>Affiliate Policy</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li href="#">
+                                    <a href="terms.html">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate Agreement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Return & Shipping Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <h4>Affiliate Policy</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li href="#">
-                            <a href="terms.html">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Affiliate Agreement</a>
-                        </li>
-                        <li>
-                            <a href="#">Return & Shipping Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <h4>Join our email list</h4>
-                    <form action="">
-                        <div class="form-group"><input type="email" class="form-control" placeholder="Your Email Address"><button class="submit btn btn-primary"><i class="fas fa-paper-plane"></i></button></div>
-                    </form>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <ul>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Career</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>
+                <div class="col-sm-12 col-md-7">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <h4>Join our email list</h4>
+                            <form action="">
+                                <div class="form-group"><input type="email" class="form-control" placeholder="Your Email Address"><button class="submit btn btn-primary"><i class="fas fa-paper-plane"></i></button></div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6 col-md-4 offset-md-2">
+                            <ul class="d-flex justify-content-end">
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="copyright">

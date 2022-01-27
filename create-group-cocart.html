@@ -55,7 +55,7 @@
                                 <div class="d-flex"><button class="btn btn-primary" type="button">Add to cart</button></div>
                             </div>
                             <div class="d-flex justify-content-end">
-                                <a href="product-search-result.html" class="btn-link">More Result</a>
+                                <a href="product-search-result.html" class="btn-link">More Results</a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="col-md-9">
                         <div class="card step-box">
-                            <div class="step-title"><span>Create a group</span></div>
+                            <div class="step-title"><span>Create a Cocart</span></div>
                             <div class="step-body">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon4"><i class="fas fa-users"></i></span>
-                                    <input type="text" class="form-control" placeholder="Create a Group Name" aria-label="Create a Group Name" aria-describedby="basic-addon4">
+                                    <input type="text" class="form-control" placeholder="Give your CoCart a label" aria-label="Give your CoCart a label" aria-describedby="basic-addon4">
                                 </div>
                             </div>
                         </div>
@@ -136,8 +136,12 @@
                     </div>
                     <div class="col-md-9">
                         <div class="card step-box">
-                            <div class="step-title"><span>Choice of group member:</span></div>
+                            <div class="step-title"><span>Options an Invited Member can have:</span></div>
                             <div class="step-body">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault3">Vote Like/Dislike Products</label>
+                                </div>
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
                                     <label class="form-check-label" for="flexSwitchCheckDefault1">Add Products</label>
@@ -146,11 +150,7 @@
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
                                     <label class="form-check-label" for="flexSwitchCheckDefault2">Delete Products</label>
                                 </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
-                                    <label class="form-check-label" for="flexSwitchCheckDefault3">Vote Products</label>
-                                </div>
-                                <div class="form-check form-switch">
+                                <!-- <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault4">
                                     <label class="form-check-label" for="flexSwitchCheckDefault4">Show who added products</label>
                                 </div>
@@ -161,7 +161,7 @@
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault6">
                                     <label class="form-check-label" for="flexSwitchCheckDefault6">Show who deleted products</label>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -177,13 +177,13 @@
                             <div class="step-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-globe"></i></span>
-                                            <input type="url" class="form-control" placeholder="Add product url" aria-label="Add product url" aria-describedby="basic-addon1">
-                                        </div>
+                                        <div class="form-group search-group"><input type="text" name="" id="" class="form-control" placeholder="Search our Affiliates for your product"><button type="submit"><i class="fas fa-search"></i></button></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group search-group"><input type="text" name="" id="" class="form-control" placeholder="Your search query"><button type="submit"><i class="fas fa-search"></i></button></div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-globe"></i></span>
+                                            <input type="url" class="form-control" placeholder="Paste the URL of the prduct you want to add to the CoCart" aria-label="Paste the URL of the prduct you want to add to the CoCart" aria-describedby="basic-addon1">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group d-flex justify-content-center">
@@ -200,56 +200,64 @@
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <figure><img class="logo" src="images/logo.png" alt=""></figure>
-                    <a href="#" class="link mb-3 d-block">About Us</a>
-                    <h4>Follow Us</h4>
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                    </ul>
+                <div class="col-sm-12 col-md-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <figure><img class="logo" src="images/logo.png" alt=""></figure>
+                            <a href="#" class="link mb-3 d-block">About Us</a>
+                            <h4>Follow Us</h4>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <h4>Affiliate Policy</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li href="#">
+                                    <a href="terms.html">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate Agreement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Return & Shipping Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <h4>Affiliate Policy</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li href="#">
-                            <a href="terms.html">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Affiliate Agreement</a>
-                        </li>
-                        <li>
-                            <a href="#">Return & Shipping Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <h4>Join our email list</h4>
-                    <form action="">
-                        <div class="form-group"><input type="email" class="form-control" placeholder="Your Email Address"><button class="submit btn btn-primary"><i class="fas fa-paper-plane"></i></button></div>
-                    </form>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <ul>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Career</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>
+                <div class="col-sm-12 col-md-7">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <h4>Join our email list</h4>
+                            <form action="">
+                                <div class="form-group"><input type="email" class="form-control" placeholder="Your Email Address"><button class="submit btn btn-primary"><i class="fas fa-paper-plane"></i></button></div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6 col-md-4 offset-md-2">
+                            <ul class="d-flex justify-content-end">
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
