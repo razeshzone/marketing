@@ -177,6 +177,18 @@ select,
 .modal-content {
   background: var(--lightSilver);
 }
+.input-group-text,
+.input-group > .form-control,
+.search-box .form-control,
+.search-group .form-control,
+.form-control.form-control-lg {
+  border-color: var(--primaryColor);
+  background: var(--lightSilver);
+}
+.form-select {
+  border-color: var(--primaryColor);
+  background-color: var(--lightSilver);
+}
 /* global css ends */
 /* header starts */
 .main-header {
@@ -345,11 +357,6 @@ select,
 .contact-modal input[type="email"],
 .contact-modal input[type="password"] {
   padding-left: 15px;
-}
-.contact-modal .input-group-text,
-.contact-modal .input-group > .form-control {
-  border-color: var(--primaryColor);
-  background: var(--lightSilver);
 }
 /* main-footer starts */
 .main-footer {
@@ -1390,10 +1397,10 @@ label.error {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  color: var(--white);
+  color: var(--primaryColor);
   font-size: 16px;
   font-weight: 700;
-  background: var(--bs-success);
+  background: var(--gray);
 }
 .step-box {
   padding: 20px;
@@ -1407,12 +1414,11 @@ label.error {
 .step-title span {
   font-size: 20px;
   font-weight: 700;
-  background: var(--lightGray);
+  background: var(--silver);
   padding: 10px 20px;
-  color: var(--white);
+  color: var(--primaryColor);
   position: relative;
   left: -20px;
-  color: var(--black);
   display: flex;
   justify-content: flex-start;
 }
@@ -1432,6 +1438,7 @@ label.error {
 .step-body input[type="range"] {
   height: 50px;
 }
+
 .step-body .form-switch {
   display: flex;
   justify-content: flex-start;

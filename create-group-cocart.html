@@ -95,11 +95,7 @@
                             <div class="step-body">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
-                                    <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon2">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon3">@</span>
-                                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon3">
+                                    <input type="number" class="form-control" placeholder="Rank Your CoCart" aria-label="Rank Your CoCart" aria-describedby="basic-addon2">
                                 </div>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon4"><i class="fas fa-users"></i></span>
@@ -119,6 +115,13 @@
                         <div class="card step-box">
                             <div class="step-title"><span>Invite F&F</span></div>
                             <div class="step-body">
+                                <div class="mb-3">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select from Contact List</option>
+                                        <option value="1">Individually</option>
+                                        <option value="2">Contact Group</option>
+                                      </select>
+                                </div>
                                 <ul class="social">
                                     <li><a href="#"><i class="fas fa-envelope"></i></a></li>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -290,6 +293,20 @@
 
         document.getElementById("text").addEventListener("onkeyup", function() {
             searchBox();
+        });
+        var button = $('#text')[0];
+        var elem = $('#keyword-searcher')[0];
+
+        $(document).on('click', function(e) {
+            if ($(e.target).closest(elem).length === 0) {
+                $(elem).hide();
+            }
+        });
+
+        $(document).on('keydown', function(e) {
+            if (e.keyCode === 27) { // ESC
+                $(elem).hide();
+            }
         });
     </script>
 

@@ -323,6 +323,20 @@
         document.getElementById("text").addEventListener("onkeyup", function() {
             searchBox();
         });
+        var button = $('#text')[0];
+        var elem = $('#keyword-searcher')[0];
+
+        $(document).on('click', function(e) {
+            if ($(e.target).closest(elem).length === 0) {
+                $(elem).hide();
+            }
+        });
+
+        $(document).on('keydown', function(e) {
+            if (e.keyCode === 27) { // ESC
+                $(elem).hide();
+            }
+        });
     </script>
 
 </body>
