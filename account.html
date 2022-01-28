@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
 </head>
@@ -122,9 +123,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6 ">
-                                                <div class="input-group flex-nowrap ">
-                                                    <span class="input-group-text " id="addon-wrapping "><i class="fas fa-calendar "></i></span>
-                                                    <input type="date " class="form-control " placeholder="Date of Birth ">
+                                                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                                                    <span class="input-group-addon input-group-text"><i class="fas fa-calendar"></i></span>
+                                                    <input class="form-control" type="text" placeholder="mm/dd/yyyy" readonly />
                                                 </div>
                                             </div>
                                         </div>
@@ -163,9 +164,14 @@
                                         <div class="profile-photo ">
                                             <figure><img src="images/user.png " alt=" "></figure>
                                         </div>
-                                        <div class="mb-3">
+                                        <!-- <div class="mb-3">
                                             <label for="formFile" class="form-label">Choose a photo for profile</label>
                                             <input class="form-control form-control-lg" id="formFile" type="file">
+                                        </div> -->
+                                        <div class="mb-3">
+                                            <div class="file-upload-wrapper" data-text="Choose an avatar">
+                                                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -182,6 +188,8 @@
                                         <button class="nav-link " id="v-pills--plan2" data-bs-toggle="pill" data-bs-target="#v-pills-plan2" type="button" role="tab" aria-controls="plan2" aria-selected="true">Personal</button>
                                         <button class="nav-link" id="v-pills--plan3" data-bs-toggle="pill" data-bs-target="#v-pills-plan3" type="button" role="tab" aria-controls="plan3" aria-selected="false">Personal Enhanced</button>
                                         <button class="nav-link" id="v-pills--plan4" data-bs-toggle="pill" data-bs-target="#v-pills-plan4" type="button" role="tab" aria-controls="plan4" aria-selected="false">Private Event</button>
+                                        <button class="nav-link" id="v-pills--plan5" data-bs-toggle="pill" data-bs-target="#v-pills-plan5" type="button" role="tab" aria-controls="plan5" aria-selected="false">Public Event</button>
+                                        <button class="nav-link" id="v-pills--plan6" data-bs-toggle="pill" data-bs-target="#v-pills-plan6" type="button" role="tab" aria-controls="plan6" aria-selected="false">Influencer</button>
                                     </div>
                                 </div>
                                 <div class="col-md-9">
@@ -189,10 +197,15 @@
                                         <div class="tab-pane fade show active" id="v-pills-plan1" role="tabpanel" aria-labelledby="v-pills--plan1">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <h4>Plan A</h4>
-                                                    <p>You are subscribed to <span class="text-lg">Plan A</span>. Your card will expire on <code>XXXXXXXX0991</code> on <code>2022-12-12</code></p>
+                                                    <h4>Free/Basic</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, autem.</p>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-plan2" role="tabpanel" aria-labelledby="v-pills--plan2">
+                                            <h4>Personal</h4>
+                                            <p>You are subscribed to <span class="text-lg">Personal Plan</span>. Your card <code>XXXXXXXX0991</code> will expire <code>2022-12-12</code></p>
+
                                             <div class="v-card">
                                                 <div class="row">
                                                     <div class="col-lg-6">
@@ -203,6 +216,7 @@
                                                                 <option value="1">Master Card</option>
                                                                 <option value="2">Visa</option>
                                                                 <option value="3">Discover</option>
+                                                                <option value="4">American Express</option>
                                                               </select>
                                                         </div>
                                                     </div>
@@ -215,16 +229,39 @@
                                                         <div class="form-group"><label for="">Card Number</label><input type="text" placeholder="Card Number" class="form-control"></div>
                                                     </div>
                                                     <div class="col-lg-6">
-                                                        <label for="">Expiry Year</label>
+                                                        <label for="">Expiration Date</label>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <div class="form-group"><input type="text" placeholder="Year" class="form-control"></div>
+                                                                <div class="form-group">
+                                                                    <select class="form-select" aria-label="Year">
+                                                                        <option selected>Year</option>
+                                                                        <option value="1">2022</option>
+                                                                        <option value="2">2023</option>
+                                                                        <option value="3">2024</option>
+                                                                      </select>
+                                                                </div>
+
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <div class="form-group"><input type="text" placeholder="Month" class="form-control"></div>
+                                                                <div class="form-group">
+                                                                    <select class="form-select" aria-label="Month">
+                                                                        <option selected>Month</option>
+                                                                        <option value="1">01</option>
+                                                                        <option value="2">02</option>
+                                                                        <option value="3">03</option>
+                                                                      </select>
+                                                                </div>
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <div class="form-group"><input type="text" placeholder="Day" class="form-control"></div>
+                                                                <div class="form-group">
+                                                                    <select class="form-select" aria-label="Date">
+                                                                        <option selected>Date</option>
+                                                                        <option value="1">01</option>
+                                                                        <option value="2">02</option>
+                                                                        <option value="3">03</option>
+                                                                      </select>
+
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -233,15 +270,19 @@
                                                     <div class="col-lg-6"><button class="btn btn-primary" type="submit">Save</button></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-plan2" role="tabpanel" aria-labelledby="v-pills--plan2">
-                                            <h4>Plan B</h4>
+
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-plan3" role="tabpanel" aria-labelledby="v-pills--plan3">
                                             <h4>Plan C</h4>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-plan4" role="tabpanel" aria-labelledby="v-pills--plan4">
-                                            <h4>Plan D</h4>
+                                            <h4>Private Plan</h4>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-plan5" role="tabpanel" aria-labelledby="v-pills--plan5">
+                                            <h4>Public Plan</h4>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-plan6" role="tabpanel" aria-labelledby="v-pills--plan6">
+                                            <h4>Influencer</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -278,10 +319,8 @@
                                             <span class="input-group-text " id="addon-wrapping "><i class="fas fa-users "></i></span>
                                             <select class="form-select" aria-label="gender">
                                             <option selected>Select Group</option>
-                                            <option value="1 ">Group A</option>
-                                            <option value="2 ">Group B</option>
-                                            <option value="3 ">Group C</option>
-                                            <option value="4 ">Group D</option>
+                                            <option value="1 ">Contact Group name </option>
+                                            <option value="2 ">Select from existing one</option>
                                           </select>
 
                                         </div>
@@ -346,19 +385,35 @@
                     </div>
                     <div class="tab-pane fade" id="v-pills-support" role="tabpanel " aria-labelledby="v-pills-support-tab ">
                         <div class="card-panel ">
-                            <h2 class="mb-3 ">Please identify your issue needing assistance, your concerns, or your comments to send an Email</h2>
                             <div class="row flex-column-reverse flex-sm-column-reverse flex-md-row">
-                                <div class="col-md-8 ">
+                                <div class="col-md-12 ">
                                     <div class="row mb-3 ">
                                         <div class="col-md-12 ">
-                                            <div class="input-group flex-nowrap ">
-                                                <textarea name="messages" cols="30" rows="20" class="form-control " placeholder="Your message is limited to 500 words " aria-label="Message " aria-describedby="addon-wrapping "></textarea>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="" class="mb-2">Please identify your issue needing assistance, your concerns, or your comments to send an Email</label>
+                                                    <div class="input-group flex-nowrap mb-3">
+                                                        <textarea name="messages" cols="30" rows="20" class="form-control " placeholder="Your message is limited to 500 words " aria-label="Message " aria-describedby="addon-wrapping "></textarea>
+                                                    </div>
+                                                    <button class="btn btn-primary " type="submit ">Send email</button>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-group flex-nowrap ">
+                                                        <span class="input-group-text " id="addon-wrapping "><i class="fab fa-twitter "></i></span>
+                                                        <input type="email " class="form-control " placeholder="TwitterDM account" aria-label="TwitterDM account" aria-describedby="addon-wrapping ">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="mb-2">Please identify your issue needing assistance, your concerns, or your comments to send an Tweet</label>
+                                                        <div class="input-group mb-2">
+                                                            <textarea name="messages" cols="30" rows="20" class="form-control " placeholder="Limit your Tweet to 140 character" aria-label="Limit your Tweet to 140 character " maxlength="140" aria-describedby="addon-wrapping "></textarea>
+                                                        </div>
+                                                        <span class="s-info"> Tweet to 140 character</span>
+                                                    </div>
+                                                    <button class="btn btn-primary " type="submit ">Send Tweet</button>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row ">
-                                        <div class="col-md-3 ">
-                                            <button class="btn btn-primary " type="submit ">Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -448,10 +503,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="js/scripts.js "></script>
 
     <script>
+        $("#datepicker").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+        // }).datepicker('update', new Date());
+
+        $("form").on("change", ".file-upload-field", function() {
+            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
+        });
+
         $("#profileForm").validate({
             rules: {
                 firstname: {

@@ -181,7 +181,9 @@ select,
 .input-group > .form-control,
 .search-box .form-control,
 .search-group .form-control,
-.form-control.form-control-lg {
+.form-control.form-control-lg,
+.form-control,
+.cart-product-lg input {
   border-color: var(--primaryColor);
   background: var(--lightSilver);
 }
@@ -530,6 +532,7 @@ select,
 .search-area {
   width: 40%;
   margin-left: 10%;
+  margin-right: 10px;
 }
 .search-box {
   position: relative;
@@ -729,7 +732,7 @@ select,
 .sidebar {
   border-right: solid 1px var(--gray);
   padding-right: 15px;
-  width: 20%;
+  width: 25%;
   flex-basis: auto;
 }
 .scroller {
@@ -795,7 +798,7 @@ select,
   display: block;
 }
 .member-row .member-right-col {
-  width: 80%;
+  width: 75%;
   padding-left: 30px;
 }
 @media (min-width: 992px) {
@@ -939,6 +942,7 @@ select,
   font-size: 10px;
   font-weight: 700;
   text-transform: capitalize;
+  display: none;
 }
 .product-item:hover {
   transition: var(--transition500);
@@ -951,6 +955,27 @@ select,
 .product-item figure > img {
   height: 150px;
   object-fit: contain;
+}
+.chat-sidebar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background: var(--primaryGradient);
+  border: solid 1px var(--primaryColor);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 16px;
+  padding: 8px 15px;
+  transition: var(--transition500);
+}
+.chat-sidebar a i {
+  margin-right: 10px;
+}
+.chat-sidebar a:hover {
+  background: var(--silver);
+  color: var(--primaryColor);
+  transition: var(--transition500);
 }
 .product-item .like-option {
   list-style: none;
@@ -1352,7 +1377,7 @@ label.error {
   line-height: 2.5;
 }
 .account-tabs .input-group > textarea.form-control {
-  height: 300px;
+  height: 200px;
 }
 .cart-products-block .btn-primary {
   width: 100px;
@@ -1566,6 +1591,9 @@ label.error {
   transform: translate(-50%, -50%);
   background: var(--lightGray);
 }
+.group-cart-title h4 i {
+  color: var(--primaryColor);
+}
 .action-dropdown .btn {
   padding: 5px 10px;
   box-shadow: none;
@@ -1575,4 +1603,81 @@ label.error {
 .action-dropdown .dropdown-toggle:after {
   content: "";
   display: none;
+}
+.add-url {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-url .btn {
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 50px;
+  margin-left: 15px;
+}
+.action-link a {
+  color: var(--black);
+}
+.action-link a:hover {
+  color: var(--primaryColor);
+}
+.file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.file-upload-wrapper:after {
+  content: attr(data-text);
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--lightSilver);
+  padding: 0px 15px;
+  display: block;
+  width: calc(100% - 40px);
+  pointer-events: none;
+  z-index: 20;
+  height: 50px;
+  line-height: 50px;
+  color: var(--bs-gray);
+  border-radius: 5px 10px 10px 5px;
+  border: solid 1px var(--primaryColor);
+}
+.file-upload-wrapper:before {
+  content: "Upload";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 50px;
+  background: var(--primaryGradient);
+  color: var(--white);
+  font-weight: 700;
+  z-index: 25;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 15px;
+  text-transform: capitalize;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+}
+.file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+.s-info {
+  font-size: 12px;
+  display: block;
 }

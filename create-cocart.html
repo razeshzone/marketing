@@ -91,19 +91,15 @@
                     </div>
                     <div class="col-md-9">
                         <div class="card step-box">
-                            <div class="step-title"><span>Create a group</span></div>
+                            <div class="step-title"><span>Create a Cocart</span></div>
                             <div class="step-body">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
-                                    <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon2">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon3">@</span>
-                                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon3">
+                                    <input type="number" class="form-control" placeholder="Rank Your CoCart" aria-label="Rank Your CoCart" aria-describedby="basic-addon2">
                                 </div>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon4"><i class="fas fa-users"></i></span>
-                                    <input type="text" class="form-control" placeholder="Create a Group Name" aria-label="Create a Group Name" aria-describedby="basic-addon4">
+                                    <input type="text" class="form-control" placeholder="Give your CoCart a label" aria-label="Give your CoCart a label" aria-describedby="basic-addon4">
                                 </div>
                             </div>
                         </div>
@@ -119,6 +115,13 @@
                         <div class="card step-box">
                             <div class="step-title"><span>Invite F&F</span></div>
                             <div class="step-body">
+                                <div class="mb-3">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select from Contact List</option>
+                                        <option value="1">Individually</option>
+                                        <option value="2">Contact Group</option>
+                                      </select>
+                                </div>
                                 <ul class="social">
                                     <li><a href="#"><i class="fas fa-envelope"></i></a></li>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -136,8 +139,12 @@
                     </div>
                     <div class="col-md-9">
                         <div class="card step-box">
-                            <div class="step-title"><span>Choice of group member:</span></div>
+                            <div class="step-title"><span>Options an Invited Member can have:</span></div>
                             <div class="step-body">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault3">Vote Like/Dislike Products</label>
+                                </div>
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
                                     <label class="form-check-label" for="flexSwitchCheckDefault1">Add Products</label>
@@ -146,11 +153,7 @@
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
                                     <label class="form-check-label" for="flexSwitchCheckDefault2">Delete Products</label>
                                 </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
-                                    <label class="form-check-label" for="flexSwitchCheckDefault3">Vote Products</label>
-                                </div>
-                                <div class="form-check form-switch">
+                                <!-- <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault4">
                                     <label class="form-check-label" for="flexSwitchCheckDefault4">Show who added products</label>
                                 </div>
@@ -161,7 +164,7 @@
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault6">
                                     <label class="form-check-label" for="flexSwitchCheckDefault6">Show who deleted products</label>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -177,13 +180,13 @@
                             <div class="step-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-globe"></i></span>
-                                            <input type="url" class="form-control" placeholder="Add product url" aria-label="Add product url" aria-describedby="basic-addon1">
-                                        </div>
+                                        <div class="form-group search-group"><input type="text" name="" id="" class="form-control" placeholder="Search our Affiliates for your product"><button type="submit"><i class="fas fa-search"></i></button></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group search-group"><input type="text" name="" id="" class="form-control" placeholder="Your search query"><button type="submit"><i class="fas fa-search"></i></button></div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-globe"></i></span>
+                                            <input type="url" class="form-control" placeholder="Paste the URL of the prduct you want to add to the CoCart" aria-label="Paste the URL of the prduct you want to add to the CoCart" aria-describedby="basic-addon1">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group d-flex justify-content-center">

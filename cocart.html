@@ -84,11 +84,42 @@
     <!-- header ends -->
     <section class="account-section group-section product-wrapper">
         <div class="container">
+            <div class="s-search">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group search-group"><input type="text" name="" id="" class="form-control" placeholder="Search our Affiliates for your product"><button type="submit"><i class="fas fa-search"></i></button></div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4 class="action-link">Modify Products (
+                                    <a href="#">Add</a> /
+                                    <a href="#">Delete</a> )</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="add-url">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-globe"></i></span>
+                                        <input type="url" class="form-control" placeholder="Add product Url" aria-label="Add product Url" aria-describedby="basic-addon1">
+                                    </div>
+                                    <button class="btn btn-primary" type="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-cart-title">
+                <h4><span><i class="fas fa-shopping-cart"></i> CoCart - Title A</span></h4>
+            </div>
             <div class="member-row">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarSupportedContent" aria-controls="sidebarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fas fa-bars"></i></span>
                   </button>
                 <div class="sidebar scroller collapse navbar-collapse" id="sidebarSupportedContent">
+                    <div class="chat-sidebar">
+                        <a href="chat.html"><i class="fas fa-comment-dots"></i><span>Chat</span></a>
+                    </div>
                     <h4>CoCarts I Own</h4>
                     <ul class="sidebar-list">
                         <li class="active"><a href="#"><span>Title A</span><i class="fas fa-bell"></i></a></li>
@@ -105,10 +136,7 @@
                     </ul>
                 </div>
                 <div class="member-right-col">
-                    <div class="group-cart-title">
-                        <h4><span><i class="fas fa-shopping-basket"></i> CoCart - Title A</span></h4>
-                    </div>
-                    <h4 class="mb-3">Modify Products</h4>
+                    <!-- <h4 class="mb-3">Modify Products</h4> -->
                     <div class="cocart-group">
                         <div class="row">
                             <div class="col-md-9 col-lg-10">
@@ -116,7 +144,6 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="product-item">
-                                                <div class="offer">Best Seller</div>
                                                 <ul class="like-option">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>10</span></a></li>
                                                     <li><a href="#"><i class="fas fa-thumbs-down"></i> <span>10</span></a></li>
@@ -129,7 +156,18 @@
                                                     <span class="product-title">Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate</span>
                                                     <span class="product-price"><span class="highlight">Rs.10,499</span> <span class="line-through">Rs.12,963</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -147,7 +185,18 @@
                                                     <span class="product-title">Redmi 9 Activ (Coral Green, 4GB RAM, 64GB Storage)</span>
                                                     <span class="product-price"><span class="highlight">Rs.9,499</span> <span class="line-through">Rs.10,979</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="c-count">(150 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -165,12 +214,22 @@
                                                     <span class="product-title">Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime</span>
                                                     <span class="product-price"><span class="highlight">Rs.13,499</span> <span class="line-through">Rs.15,979</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="c-count">(150 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="product-item">
-                                                <div class="offer">Best Seller</div>
 
                                                 <ul class="like-option">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>22</span></a></li>
@@ -184,7 +243,18 @@
                                                     <span class="product-title">Redmi 9A Sport (Carbon Black, 2GB RAM, 32GB Storage)</span>
                                                     <span class="product-price"><span class="highlight">Rs7,499</span> <span class="line-through">Rs.8,963</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -201,7 +271,18 @@
                                                     <span class="product-title">Redmi 9A (Midnight Black 2GB RAM 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery</span>
                                                     <span class="product-price"><span class="highlight">Rs.7,499</span> <span class="line-through">Rs.8,979</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="c-count">(150 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -219,7 +300,18 @@
                                                     <span class="product-title">Redmi 9A Sport (Metallic Blue, 2GB RAM, 32GB Storage)</span>
                                                     <span class="product-price"><span class="highlight">Rs.7,499</span> <span class="line-through">Rs.8,979</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="c-count">(150 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -237,13 +329,23 @@
                                                     <span class="product-title">boAt Airdopes 141 TWS Earbuds with 42H Playtime, Beast Mode, ENx Tech, ASAP Charge, IWP, IPX4 Water Resistance, Smooth Touch Controls(Cider Cyan)</span>
                                                     <span class="product-price"><span class="highlight">Rs7,499</span> <span class="line-through">Rs.8,963</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="product-item">
-                                                <div class="offer">Best Seller</div>
 
                                                 <ul class="like-option">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i> <span>60</span></a></li>
@@ -258,7 +360,18 @@
                                               </sp  an>
                                                     <span class="product-price"><span class="highlight">Rs.299</span> <span class="line-through">Rs.979</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="c-count">(150 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -276,14 +389,25 @@
                                                     <span class="product-title">Oneplus Bullets Wireless Z Bass Edition Bluetooth in Ear Earphones with mic (Reverb Red)</span>
                                                     <span class="product-price"><span class="highlight">Rs.1,499</span> <span class="line-through">Rs.1,979</span></span>
                                                 </a>
-                                                <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span class="c-count">(150 votes)</span></div>
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <div class="ratings"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="c-count">(112 votes)</span></div>
+                                                    <div class="dropdown action-dropdown">
+                                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Add</a></li>
+                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-lg-2">
-                                <div class="card border p-3">
+                                <div class="card border p-3 mb-3">
                                     <h4>Members</h4>
                                     <div class="cart-products-block">
                                         <div class="cart-product member-block">
@@ -307,6 +431,10 @@
 
                                     </div>
                                 </div>
+
+                                <div class="g-adv-desc">
+                                    <img src="images/g-adv.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -322,7 +450,6 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="product-item">
-                            <div class="offer">Best Seller</div>
                             <a href="#">
                                 <figure><img src="images/redmi9ASport.jpg" alt=""></figure>
                                 <span class="product-title">Redmi 9A Sport (Carbon Black, 2GB RAM, 32GB Storage)</span>
