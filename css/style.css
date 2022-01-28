@@ -1736,3 +1736,6 @@ label.error {
 .datepicker table {
   width: 100%;
 }
+.modal-logo {
+  max-width: 50px;
+}
