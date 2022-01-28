@@ -228,7 +228,7 @@
     max-width: 400px;
   }
   .product-item a {
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 100%;
   }
@@ -333,6 +333,9 @@
   }
 }
 @media (max-width: 480px) {
+  .navbar-brand {
+    max-width: 40px;
+  }
   .banner-figure img {
     max-height: 160px;
   }
